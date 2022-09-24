@@ -32,6 +32,9 @@ export const CardWrapper = styled.div`
   }
   @media screen and (max-width: 600px) {
     width: 100%;
+    p {
+      font-size: 18px;
+    }
   }
 `;
 

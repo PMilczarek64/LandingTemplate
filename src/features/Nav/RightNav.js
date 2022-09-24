@@ -17,7 +17,7 @@ const Ul = styled.ul`
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;
     right: 0;
-    height: 100vh;
+    height: 100%;
     width: 250px;
     padding-top: 3.5rem;
     opacity: 0.95;

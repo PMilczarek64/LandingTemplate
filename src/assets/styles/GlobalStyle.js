@@ -24,4 +24,10 @@ a {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 400px) {
+      p {
+        font-size: 18px;
+      }
+  }
+
 `;

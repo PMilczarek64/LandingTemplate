@@ -15,7 +15,6 @@ export const CardWrapper = styled.div`
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #6c757dc1;
-    font-size: 14px;
     //color: ${({ theme }) => theme.colors.darkGrey};
   }
   h3 {
@@ -23,6 +22,10 @@ export const CardWrapper = styled.div`
   }
   @media screen and (max-width: 600px) {
     width: 100%;
+  }
+  @media only screen and (max-width: 500px) {
+    align-items: center;
+      font-size: 18px;
   }
 `;
 
