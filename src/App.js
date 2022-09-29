@@ -1,7 +1,8 @@
 import Home from "./views/Home/Home";
 import { GlobalStyle } from "./assets/styles/GlobalStyle";
 import AboutUs from "./views/AboutUs/AboutUs";
-import PhotoGrid from "./views/PhotoGrid";
+import OurWork from "./views/OurWork/OurWork";
+import Team from "./views/Team/Team";
 
 function App() {
   return (
@@ -9,6 +10,8 @@ function App() {
       <GlobalStyle />
       <Home />
       <AboutUs />
+      <OurWork />
+      <Team />
     </div>
   );
 }

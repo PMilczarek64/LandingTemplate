@@ -9,7 +9,7 @@ const Home = () => {
       <Header>
         <Navbar />
         <Inner>
-          <p className="main"><span>Alecto</span> is simple PSD Template</p>
+          <h1 className="main"><span>Alecto</span> is simple PSD Template</h1>
           <p className="description">Nam varius accusman elementum aliquam</p>
           <Button>Learn more</Button>
         </Inner>

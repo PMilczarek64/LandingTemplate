@@ -11,7 +11,8 @@ export const Header = styled.div`
   h1{
     margin-bottom: 15px;
     font-weight: 200;
-    color: ${({ theme }) => theme.colors.black};
+    color: ${({ theme }) => theme.colors.darkGrey};
+    font-size: ${({ theme }) => theme.fontSize.xxxl};
   }
   span {
     background-color: ${({ theme }) => theme.colors.detailGreen};
@@ -23,7 +24,6 @@ export const Header = styled.div`
     margin: 10px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    color: ${({ theme }) => theme.colors.darkGrey};;
   }
 `;
 
@@ -33,7 +33,7 @@ const ContentHeader = ({title}) => {
         <h1>{title}</h1>
         <span></span>
         <p>lorem ipsum accusman elementum. Aliquam fermentum eros in suscipit scelerisque</p>
-      </Header>
+    </Header>
   );
 };
 

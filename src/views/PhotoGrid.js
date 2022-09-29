@@ -10,8 +10,6 @@ const Container = styled.div`
 
 const GridWrapper = styled.div`
   padding: 60px 150px;
-  font-size: 38px;
-  font-weight: bold;
   text-align: start;
   align-items: center;
   display: grid;
@@ -55,14 +53,14 @@ const GridWrapper = styled.div`
     min-height: 180px;
     display: flex;
     flex-direction: column;
+    h1 {
+      font-weight: 300;
+    }
     p {
-      font-size: 15px;
+      font-size: ${({ theme }) => theme.fontSize.l};
       font-weight: 400;
       margin-block: 40px;
       color: ${({ theme }) => theme.colors.faded};
-    }
-    h4 {
-      font-weight: 400;
     }
     @media only screen and (max-width: 1200px) {
       align-items: center;
@@ -103,14 +101,14 @@ const PhotoGrid = () => {
       <GridWrapper className="grey">
         <Photo1 className="grid-item"><img src={camera}></img></Photo1>
         <Description1 className="grid-item">
-          <h4 className="main"><span>Alecto</span> is simple Temp</h4>
+          <h1 className="main"><span>Alecto</span> is simple Temp</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
           <ButtonGreen className="green">Learn more</ButtonGreen>
         </Description1>
       </GridWrapper>
       <GridWrapper>
         <Description2 className="grid-item">
-          <h4 className="main"><span>Alecto</span> is simple Temp</h4>
+          <h1 className="main"><span>Alecto</span> is simple Temp</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
           <ButtonGreen className="green">Learn more</ButtonGreen>
         </Description2>

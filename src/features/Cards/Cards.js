@@ -4,7 +4,7 @@ import clsx from "clsx";
 import styled from "styled-components";
 
 export const Container = styled.div`
-  margin: 60px 50px 20px 50px;
+  margin: 60px 50px;
   min-height: 300px;
   display: flex;
   flex-direction: row;
@@ -16,7 +16,7 @@ export const CardWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 250px;
-  
+  margin-inline: 15px;
   align-items: center;
   text-align: center;
   p {
@@ -24,7 +24,6 @@ export const CardWrapper = styled.div`
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: ${({ theme }) => theme.colors.faded};
-    font-size: 14px;
     //color: ${({ theme }) => theme.colors.darkGrey};
   }
   h3 {
@@ -32,17 +31,14 @@ export const CardWrapper = styled.div`
   }
   @media screen and (max-width: 600px) {
     width: 100%;
-    p {
-      font-size: 18px;
-    }
   }
 `;
 
 const Icon = styled.div`
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   background-color: ${({ theme }) => theme.colors.middleGrey};
   color: ${({ theme }) => theme.colors.grey};
   font-size: 60px;

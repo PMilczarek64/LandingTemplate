@@ -18,8 +18,8 @@ const AboutUs = () => {
       <PhotoGrid />
       <Banner image={hall}>
         <RoundedPhoto photo={cat} />
-        <h1><span>Alecto </span>lorem ipsum accusman elementum</h1>
-        <h3>WEB Developer & Designer</h3>
+        <h2><span>Alecto </span>lorem ipsum accusman elementum</h2>
+        <h4>WEB Developer & Designer</h4>
       </Banner>
     </>
   );

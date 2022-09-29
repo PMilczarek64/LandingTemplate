@@ -26,11 +26,11 @@ const Inner = styled.div`
   @media only screen and (max-width: 480px) {
     transform: translateY(-70%);
   }
-  h1 {
+  h2 {
     font-weight: 200;
     margin-block: 20px;
   }
-  h3 {
+  h4 {
     font-weight: 400;
     color: #6c757dc1;
   }

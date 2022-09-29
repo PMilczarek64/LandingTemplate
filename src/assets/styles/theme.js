@@ -4,7 +4,7 @@ export const theme = {
     lightGrey: 'rgb(250, 249, 249);',
     grey: '#C0C7D6',
     faded: '#6c757dc1',
-    darkGrey: '#737C8E',
+    darkGrey: '#5e6573',
     middleGrey: 'rgb(245, 236, 242);',
     black: '#111111',
     success: '#8FCB81',
@@ -16,6 +16,7 @@ export const theme = {
 
   },
   fontSize: {
+    xxxl: '48px',
     xxl: '40px',
     xl: '24px',
     l: '17px',

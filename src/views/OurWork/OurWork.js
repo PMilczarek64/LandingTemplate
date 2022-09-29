@@ -1,14 +1,21 @@
 import React from "react";
 import styled from "styled-components";
+import ContentHeader from "../../common/ContentHeader";
+import OurWorkCards from "../../features/OurWorkCards/OurWorkCards";
 
 const Container = styled.div`
-  margin: 100px;
+  padding: 80px 130px;
+  background-color: ${({ theme }) => theme.colors.lightGrey};
+  @media screen and (max-width: 1150px) {
+    padding-inline: 50px;
+  }
 `;
 
 const OurWork = () => {
   return (
     <Container>
-      
+      <ContentHeader title="Our Work" />
+      <OurWorkCards />
     </Container>
   );
 };

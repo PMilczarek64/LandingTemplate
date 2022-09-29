@@ -16,7 +16,28 @@ body {
 
 h1 {
   font-weight: 400;
+  font-size: ${({ theme }) => theme.fontSize.xxxl};
+  color: ${({ theme }) => theme.colors.darkGrey};
+}
+
+h2 {
+  font-weight: 400;
   font-size: ${({ theme }) => theme.fontSize.xxl};
+}
+
+h3 {
+  font-size: 26px;
+  color: ${({ theme }) => theme.colors.darkGrey};
+}
+
+h4 {
+  font-weight: 400;
+  font-size: ${({ theme }) => theme.fontSize.xl};
+}
+
+p {
+  color: ${({ theme }) => theme.colors.faded};
+  line-height: 1.7;
 }
 
 a {
@@ -24,9 +45,9 @@ a {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
       p {
-        font-size: 18px;
+        font-size: 20px;
       }
   }
 

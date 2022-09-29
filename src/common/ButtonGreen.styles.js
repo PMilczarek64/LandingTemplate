@@ -1,13 +1,15 @@
 import styled from "styled-components";
 
 export const ButtonGreen = styled.button`
+  min-width: 170px;
+  min-height: 50px;
   border-style: solid;
-  border-radius: 20px;
+  border-radius: 25px;
   color: white;
-  padding-inline: 35px;
-  padding-block: 10px;
+  padding-inline: 16px;
+  padding-block: 6px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+  font-size: ${({ theme }) => theme.fontSize.l};
   font-weight: 600;
   max-width: 170px;
   background-color: ${({ theme }) => theme.colors.detailGreen};

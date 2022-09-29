@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import RightNav from './RightNav';
+import clsx from 'clsx';
 
 const StyledBurger = styled.div`
   width: 2rem;
@@ -23,7 +24,7 @@ const StyledBurger = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 28px;
+    font-size: 34px;
     color: ${({ open, theme }) => open ? theme.colors.lightGrey : theme.colors.detailGreen};
     
   }
@@ -36,7 +37,7 @@ const NavBurger = () => {
     <>
       <StyledBurger open={open} onClick={() => setOpen(!open)}>
         <div>
-        <i class="fa fa-bars"></i>
+        <i className={clsx(open === false ? "fa fa-bars" : "fa fa-times")}></i>
         </div>
       </StyledBurger>
       <RightNav open={open} />

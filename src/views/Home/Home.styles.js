@@ -17,7 +17,6 @@ export const Header = styled.div`
   font-family: 'Montserrat', sans-serif;
   color: ${({ theme }) => theme.colors.lightGrey};
   padding-inline: 50px;
-  
 `;
 
 export const Navbar = styled.nav`
@@ -57,7 +56,6 @@ export const Inner = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: ${({ theme }) => theme.colors.lightGrey};
   text-align: center;
   z-index: 0;
   .main {
@@ -66,11 +64,13 @@ export const Inner = styled.div`
       font-weight: bold;
     }
     font-size: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
+    color: ${({ theme }) => theme.colors.white};
   }
   .description {
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
+    color: ${({ theme }) => theme.colors.white};
   }
 
   @media screen and (max-width: 800px) {
