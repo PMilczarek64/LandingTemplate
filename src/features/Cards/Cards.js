@@ -15,8 +15,8 @@ export const Container = styled.div`
 export const CardWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  width: 210px;
-  margin: 20px;
+  width: 250px;
+  
   align-items: center;
   text-align: center;
   p {
@@ -39,13 +39,13 @@ export const CardWrapper = styled.div`
 `;
 
 const Icon = styled.div`
-  width: 130px;
-  height: 130px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   margin-bottom: 50px;
   background-color: ${({ theme }) => theme.colors.middleGrey};
   color: ${({ theme }) => theme.colors.grey};
-  font-size: 54px;
+  font-size: 60px;
   display: flex;
   justify-content: center;
   align-items: center;

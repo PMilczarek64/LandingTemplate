@@ -9,7 +9,7 @@ const Container = styled.div`
 `;
 
 const GridWrapper = styled.div`
-  padding: 60px 170px;
+  padding: 60px 150px;
   font-size: 38px;
   font-weight: bold;
   text-align: start;

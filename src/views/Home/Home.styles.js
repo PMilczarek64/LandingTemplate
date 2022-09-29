@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Aurora from '../../images/Aurora.jpg';
 
 export const Container = styled.div`
 max-width: 100%;
@@ -10,7 +11,7 @@ padding: 0;
 export const Header = styled.div`
   position: relative;
   height: 680px;
-  background-image:  url("https://images.pexels.com/photos/258112/pexels-photo-258112.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image:  url(${Aurora});
   background-size: cover;
   overflow: hidden;
   font-family: 'Montserrat', sans-serif;

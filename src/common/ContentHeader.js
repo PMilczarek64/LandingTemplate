@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 
 export const Header = styled.div`
@@ -25,3 +26,15 @@ export const Header = styled.div`
     color: ${({ theme }) => theme.colors.darkGrey};;
   }
 `;
+
+const ContentHeader = ({title}) => {
+  return (
+    <Header>
+        <h1>{title}</h1>
+        <span></span>
+        <p>lorem ipsum accusman elementum. Aliquam fermentum eros in suscipit scelerisque</p>
+      </Header>
+  );
+};
+
+export default ContentHeader;
