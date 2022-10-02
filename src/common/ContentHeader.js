@@ -7,7 +7,7 @@ export const Header = styled.div`
   align-items: center;
   text-align: center;
   flex-direction: column;
-  margin: 50px 20px;
+  padding: 50px 20px;
   h1{
     margin-bottom: 15px;
     font-weight: 200;

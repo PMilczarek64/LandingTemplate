@@ -57,7 +57,7 @@ const OurWorkCards = () => {
   return (
     <Container>
       {titles.map((title, index) =>
-      <CardWrapper>
+      <CardWrapper key={title}>
         <Icon><span className={"fa fa-" + icons[index]} /></Icon>
         <ContentWrapper>
           <h1>{title}</h1>

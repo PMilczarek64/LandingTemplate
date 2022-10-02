@@ -66,7 +66,7 @@ const Cards = () => {
   return (
     <Container>
       {icons.map( icon =>
-        <CardWrapper >
+        <CardWrapper key={icon}>
           <Icon className={clsx(active === icon && 'active')} onClick={() => setActive(icon)}>
             <span className={'fa fa-' + icon}></span>
           </Icon>

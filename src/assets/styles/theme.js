@@ -12,15 +12,28 @@ export const theme = {
     warning: '#E1D888',
     darkPurple: '#C0C7D6',
     lightPurple: '#ECEFF7',
-    detailGreen: 'rgb(35, 238, 173)',
+    detailGreen: '#17daa3',
+    greenTransparent: 'rgba(35, 238, 174, 0.376)',
 
   },
   fontSize: {
     xxxl: '48px',
     xxl: '40px',
     xl: '24px',
-    l: '17px',
+    l: '18px',
     m: '12px',
     s: '11px',
   },
+
+  gridAreas: {
+    leftPhoto: ["a a b b b "],
+    rightPhoto: ["a a a b b "],
+    equallyLeft: ["a b"],
+    equallyRight: ["b a"],
+  },
+
+  gridColumns: {
+    five: '1fr, 1fr, 1fr, 1fr, 1fr',
+    two: '1fr 1fr',
+  }
 };
