@@ -16,10 +16,10 @@ const ContentWrapper = styled.div`
   padding-block: 50px 100px;
 `;
 
-const AboutUs = () => {
+const AboutUs = ({passedRef}) => {
   const cardTitles = ['Photos', 'Graphics', 'Drowning', 'Commercials'];
   return (
-    <>
+    <div ref={passedRef}>
       <ContentWrapper>
         <ContentHeader title="About Us" />
         <Cards titles={cardTitles} />
@@ -29,10 +29,10 @@ const AboutUs = () => {
       <ContentGrid image={polaroid} columns="1fr 1fr 1fr 1fr 1fr" photoLocation="right" />
       <Banner image={hall}>
         <RoundedPhoto photo={cat} />
-        <h2><span>Alecto </span>lorem ipsum accusman elementum</h2>
+        <h2><span>Borealis </span>lorem ipsum accusman elementum</h2>
         <h4>WEB Developer & Designer</h4>
       </Banner>
-    </>
+    </div>
   );
 };
 

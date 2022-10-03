@@ -19,37 +19,6 @@ export const Header = styled.div`
   padding-inline: 50px;
 `;
 
-export const Navbar = styled.nav`
-  width: 100%;
-  height: 50px;
-  
-  position: relative;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  p {
-    font-size: 32px;
-    padding-block: 20px;
-    padding-inline: 14%;
-    span {
-      color: ${({ theme }) => theme.colors.detailGreen};
-    }
-  }
-    ul {
-      padding-block: 32px;
-      padding-inline: 4%;
-    }
-    li {
-      display: inline-flex;
-      margin-inline: 10px;
-    }
-    @media screen and (max-width: 800px) {
-    ul {
-      display: none;
-    }
-  }
-`;
-
 export const Inner = styled.div`
   position: absolute;
   width: 100%;

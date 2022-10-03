@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap');
 
 h7{
-  color: rgba(35, 238, 174, 0.576);
+  color: #17daa363;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.871), #17daa3de);
 }

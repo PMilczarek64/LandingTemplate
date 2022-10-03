@@ -12,12 +12,13 @@ body {
   background-color: ${({ theme }) => theme.colors.white};
   display: flex;
   text-align: center;
+  width: 100%;
 }
 
 h1 {
   font-weight: 400;
   font-size: ${({ theme }) => theme.fontSize.xxxl};
-  color: ${({ theme }) => theme.colors.darkGrey};
+  color: ${({ theme }) => theme.colors.white};
 }
 
 h2 {
@@ -41,7 +42,6 @@ p {
 }
 
 a {
-  color: ${({ theme }) => theme.colors.lightGrey};
   text-decoration: none;
 }
 

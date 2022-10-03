@@ -15,6 +15,12 @@ export const ButtonGreen = styled.button`
   background-color: ${({ theme }) => theme.colors.detailGreen};
   margin: 0;
   border-color: transparent;
+  &.topSpacing {
+    margin-top: 50px;
+  }
+  h1 {
+    color: white;
+  }
   :hover {
   transform: scale(1.05);
   transition: 0.3s ease-in-out;

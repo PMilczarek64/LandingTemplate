@@ -11,9 +11,9 @@ const Container = styled.div`
   }
 `;
 
-const OurWork = () => {
+const OurWork = ({passedRef}) => {
   return (
-    <Container>
+    <Container ref={passedRef}>
       <ContentHeader title="Our Work" />
       <OurWorkCards />
     </Container>

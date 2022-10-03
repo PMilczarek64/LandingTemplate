@@ -7,10 +7,11 @@ const StyledBurger = styled.div`
   width: 2rem;
   height: 2rem;
   position: fixed;
-  top: 22.5px;
-  right: 20px;
+  top: 45px;
+  right: 45px;
   z-index: 20;
   display: none;
+  background-color: transparent;
   @media (max-width: 768px) {
     display: flex;
     justify-content: space-around;
@@ -24,13 +25,13 @@ const StyledBurger = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 34px;
+    font-size: 80px;
     color: ${({ open, theme }) => open ? theme.colors.lightGrey : theme.colors.detailGreen};
     
   }
 `;
 
-const NavBurger = () => {
+const NavBurger = ({action, pages}) => {
   const [open, setOpen] = useState(false)
 
   return (
@@ -40,7 +41,7 @@ const NavBurger = () => {
         <i className={clsx(open === false ? "fa fa-bars" : "fa fa-times")}></i>
         </div>
       </StyledBurger>
-      <RightNav open={open} />
+      <RightNav open={open} action={action} pages={pages} />
     </>
   );
 };

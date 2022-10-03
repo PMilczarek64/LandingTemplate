@@ -4,6 +4,9 @@ import ContentHeader from "../../common/ContentHeader";
 import ContentGrid from "../ContentGrid/ContentGrid";
 import map from '../../images/map.png';
 import { theme } from "../../assets/styles/theme";
+import last from '../../images/last.jpg'
+import Banner from "../../common/Banner";
+import { ButtonGreen } from "../../common/ButtonGreen.styles";
 
 const Container = styled.div`
   background-color: ${({ theme }) => theme.colors.lightGrey};
@@ -81,16 +84,16 @@ const PurchaseButton = styled.div`
   }
 `;
 
-const Pricing = () => {
+const Pricing = ({passedRef}) => {
 
   const prices = ['$29', "$39", "$49", "$59"];
 
   return (
-    <Container>
+    <Container ref={passedRef}>
       <ContentHeader title="Pricing" />
       <CardWrapper>
         {prices.map(price =>
-          <Card>
+          <Card key={price}>
             <CardHeader>
               <h2>{price}</h2>
               <p>Lorem ipsum licence</p>
@@ -98,11 +101,15 @@ const Pricing = () => {
             <CardDescription>
               <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ante sed interdum labortis Est nisi efficitur lactus</p>
             </CardDescription>
-            <PurchaseButton>PUrchase<i class="fa fa-cart-arrow-down" aria-hidden="true"></i></PurchaseButton>
+            <PurchaseButton>PUrchase<i className="fa fa-cart-arrow-down" aria-hidden="true"></i></PurchaseButton>
           </Card>
         )}
       </CardWrapper>
-      <ContentGrid image={map} columns="1fr 1fr" photoLocation="right" bgColor={theme.colors.white}/>
+      <ContentGrid image={map} columns="1fr 1fr" photoLocation="right" bgColor={theme.colors.white} />
+      <Banner image={last}>
+        <h1>Try our <span>PSD template</span> on example.com</h1>
+        <ButtonGreen className="topSpacing">example.com</ButtonGreen>
+      </Banner>
     </Container>
   );
 };

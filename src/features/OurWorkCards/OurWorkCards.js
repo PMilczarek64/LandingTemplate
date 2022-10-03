@@ -48,11 +48,6 @@ const OurWorkCards = () => {
 
   const icons = ['rocket', 'pencil', 'copyright', 'suitcase']
   const titles = ['Development', 'Design', 'Branding', 'Portfolio'];
-  
-  titles.map((title, index) => {
-    console.log("iteration: " + index);
-    console.log("element " + title);
-  })
 
   return (
     <Container>
