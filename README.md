@@ -2,6 +2,14 @@
   <h1>:eyes: Link to the project</h1>
   <h4 align="center">https://borealis.onrender.com/</h4>
 </div>
+  
+  <!-- About the Project -->
+<div>
+  <h2 align="center">:star2: About the project</h2>
+  <p>
+    LandingTemplate is a template written in React that can be used to quickly create Landing Pages for clients. It is a project prepared for CSS and styled-components practice objectives. The project has been written so that it can be easily modified according to the client's needs.
+  </p>
+</div>
 
 <!-- TechStack -->
 <div >
@@ -10,7 +18,6 @@
 
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
-    <li><a href="https://reactrouter.com/en/main">React-router</a></li>
     <li><a href="https://styled-components.com/">styled-components</a></li>
     <li><a href="https://webpack.js.org/">Webpack</a></li>
   </ul>
@@ -21,7 +28,7 @@
 Clone the project
 
 ```bash
-  git clone https://github.com/PMilczarek64/LandingTemplateReact.git
+  git clone https://github.com/PMilczarek64/LandingTemplate.git
 ```
 
 Go to the project directory
